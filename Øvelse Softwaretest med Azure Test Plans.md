@@ -1,4 +1,3 @@
-
 # 🧪 Øvelser i Softwaretest – uden kode (Guidet version)
 
 Denne fil indeholder en række testtyper, som en softwareudvikler bør kende – og øvelser til at forstå og anvende dem. Øvelserne er målrettet 2. semester datamatikerstuderende og gennemføres i Azure DevOps.
@@ -84,4 +83,89 @@ Denne fil indeholder en række testtyper, som en softwareudvikler bør kende –
 
 ---
 
-De øvrige øvelser udvides snart i samme detaljeringsgrad. Sig til hvis du har særlige ønsker til dem.
+### 🔹 Øvelse 4: Acceptance test
+
+**🎯 Læringsmål:** Forstå forretningskrav og hvordan man bekræfter dem.  
+**🧠 Hvorfor lære dette?** Tester funktionalitet set fra forretningens/kundens perspektiv.
+
+**Sådan gør du i Azure DevOps:**
+
+1. Få en liste med funktionelle krav (fx "Bruger skal kunne ændre kodeord")
+2. Gå til **Test Plans** og klik på **New Test Plan**, navngiv den fx "Acceptance Test"
+3. Klik på **+ New Suite** for hvert krav og navngiv efter funktion (fx "Ændre kodeord")
+4. Tilføj **New Test Case** for hvert krav:
+   - Beskriv trin og forventet resultat
+5. Udfør testene med **Run for web application**
+6. Marker hvert trin og vurder om kravet er opfyldt
+7. Del dine resultater med en "kunde" (klassekammerat i rollen)
+
+---
+
+### 🔹 Øvelse 5: UI/UX test
+
+**🎯 Læringsmål:** Test af brugergrænseflade og oplevelse.  
+**🧠 Hvorfor lære dette?** UI/UX påvirker direkte brugerens oplevelse.
+
+**Sådan gør du:**
+
+1. Brug en klikbar prototype i fx Figma eller Adobe XD
+2. Arbejd to og to – én tester, én observerer
+3. Testeren får en opgave (fx "Find kontaktoplysninger")
+4. Observatøren noterer:
+   - Hvor brugeren klikker først
+   - Eventuel forvirring eller fejlplaceringer
+5. Sammenlign notater og skriv 3 forbedringsforslag
+
+---
+
+### 🔹 Øvelse 6: Regression test
+
+**🎯 Læringsmål:** Genteste eksisterende funktionalitet efter ændringer.  
+**🧠 Hvorfor lære dette?** Sikrer at ny kode ikke ødelægger eksisterende funktionalitet.
+
+**Sådan gør du i Azure DevOps:**
+
+1. Få adgang til to versioner af samme app (før og efter ændring)
+2. Lav en liste over funktioner der bør virke
+3. Opret **New Test Plan** kaldet "Regression Test"
+4. Lav én suite med flere test cases der dækker de eksisterende funktioner
+5. Udfør testen i den nye version
+6. Noter: Hvad virker stadig, og hvad er gået i stykker?
+
+---
+
+### 🔹 Øvelse 7: Smoke test
+
+**🎯 Læringsmål:** Forstå idéen med hurtig "sundhedstest".  
+**🧠 Hvorfor lære dette?** Afklarer hurtigt om systemet er testklart efter deployment.
+
+**Sådan gør du i Azure DevOps:**
+
+1. Lav en kort tjekliste: "Loader forsiden?", "Virker login?", "Vises navigationen?"
+2. Opret en **Test Plan** kaldet "Smoke Test"
+3. Opret en enkel **Static suite** og test cases ud fra listen
+4. Udfør testen efter ny deployment
+5. Dokumenter status: Passed/Failed og noter evt. kritiske fejl
+
+---
+
+### 🔹 Øvelse 8: Boundary test
+
+**🎯 Læringsmål:** Identificere og teste grænseværdier.  
+**🧠 Hvorfor lære dette?** Grænseværdier er hyppige fejlområder i software.
+
+**Sådan gør du:**
+
+1. Eksempel: Et felt tillader alder 18–99
+2. Opret en testplan og suite kaldet "Boundary Test"
+3. Tilføj 4 test cases:
+   - Indtast alder 17 → forvent "Afvises"
+   - Indtast alder 18 → forvent "Accepteres"
+   - Indtast alder 99 → forvent "Accepteres"
+   - Indtast alder 100 → forvent "Afvises"
+4. Udfør og dokumenter resultatet i Azure DevOps
+
+---
+
+Nu er alle øvelser samlet med trin-for-trin-instruktioner.
+
