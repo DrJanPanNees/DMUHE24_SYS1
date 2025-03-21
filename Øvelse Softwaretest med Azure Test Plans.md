@@ -30,16 +30,16 @@ Denne fil indeholder en række testtyper, som en softwareudvikler bør kende –
 **Sådan gør du i Azure DevOps:**
 
 1. Log ind på [https://dev.azure.com](https://dev.azure.com)
-2. Gå til dit projekt > klik på **Test Plans**
-3. Klik på **New Test Plan**, navngiv den fx “Login Test”
-4. Klik på **+ New Suite** > vælg *Static suite* > navngiv den “Gyldigt login”
-5. Klik på **+ New Test Case** og tilføj trin:
+2. Gå til dit projekt og vælg **Test Plans** i venstremenuen
+3. Klik på **New Test Plan**, navngiv planen (f.eks. “Login Test”) og klik **Create**
+4. Klik **+ New Suite** > vælg *Static suite* > navngiv suiten “Gyldigt login”
+5. Klik **+ New Test Case** og opret trin såsom:
    - Gå til login-side
    - Indtast gyldigt brugernavn og kodeord
-   - Klik login
+   - Klik på login-knappen
    - Tjek om dashboard vises
-6. Gem og kør testen med **Run for web application**
-7. Marker hvert trin som "Passed"/"Failed", og gem.
+6. Klik på **Run for web application** for at udføre testen
+7. Marker hvert trin som "Passed" eller "Failed", og gem testen
 
 ---
 
@@ -50,12 +50,12 @@ Denne fil indeholder en række testtyper, som en softwareudvikler bør kende –
 
 **Sådan gør du i Azure DevOps:**
 
-1. Gå til **Test Plans**
-2. Klik på **Exploratory testing** i menuen
-3. Vælg det system eller prototype I tester
-4. Klik rundt uden en plan – noter hvad du gør og hvad der sker
-5. Brug **Session Notes** til at dokumentere fejl, forbedringer og observationer
-6. Upload evt. screenshots
+1. Gå til **Test Plans** > klik på **Runs** > vælg **Exploratory Testing**
+2. Start en ny session og vælg det relevante system eller webapp
+3. Brug applikationen frit i 15-20 minutter – klik rundt og prøv forskellige funktioner
+4. Undervejs: Notér hvad du gør og hvilke problemer du finder
+5. Brug **Session notes** til at dokumentere observationer
+6. Tilføj screenshots og kommentarer
 
 ---
 
@@ -64,90 +64,24 @@ Denne fil indeholder en række testtyper, som en softwareudvikler bør kende –
 **🎯 Læringsmål:** Forstå hvordan brugsscenarier kan bruges til at designe test.  
 **🧠 Hvorfor lære dette?** Use cases fokuserer på brugerens behov.
 
-**Sådan gør du:**
+**Sådan gør du i Azure DevOps:**
 
-1. Få udleveret et use case-diagram (fx “Bruger bestiller pizza”)
-2. Opret en testplan i Azure DevOps
-3. Opret en suite pr. use case
-4. Opret test cases, hvor hvert trin svarer til en del af use casen
-5. Udfør testene og noter om det reelt fungerer
-
----
-
-### 🔹 Øvelse 4: Acceptance test
-
-**🎯 Læringsmål:** Forstå forretningskrav og hvordan man bekræfter dem.  
-**🧠 Hvorfor lære dette?** Tester funktionalitet set fra forretningens/kundens perspektiv.
-
-**Sådan gør du:**
-
-1. Du får 5 forretningskrav (fx “Bruger kan ændre kodeord”)
-2. Opret en testplan: “Acceptance Test”
-3. For hvert krav: Opret en testsuite og tilføj test cases
-4. Brug **Test Case**-feltet til at dokumentere forventede resultater
-5. Udfør testen og vurder om kravene er opfyldt
+1. Find et use case-diagram, fx fra et tidligere projekt eller fra pensum (eksempel: “Bruger bestiller pizza”).
+2. Log ind på [https://dev.azure.com](https://dev.azure.com)
+3. Gå til **Test Plans** i venstremenuen og klik på **New Test Plan**
+4. Navngiv testplanen (fx "Pizza-bestilling Use Case") og klik **Create**
+5. Klik **+ New Suite** > vælg *Static suite* > navngiv suiten efter din use case (fx "Bestil pizza")
+6. Inde i suiten, klik **+ New Test Case** for hvert trin i use casen:
+   - Eksempel:
+     - Åbn pizzamenu
+     - Vælg pizza
+     - Læg i kurv
+     - Gå til betaling
+     - Gennemfør bestilling
+7. Klik **Run for web application** for at udføre testen
+8. Marker hvert trin som "Passed" eller "Failed"
+9. Gem og reflekter: Virkede det som forventet? Notér evt. problemer eller forbedringsforslag
 
 ---
 
-### 🔹 Øvelse 5: UI/UX test
-
-**🎯 Læringsmål:** Test af brugergrænseflade og oplevelse.  
-**🧠 Hvorfor lære dette?** UI/UX påvirker direkte brugerens oplevelse.
-
-**Sådan gør du:**
-
-1. Brug en klikbar prototype (Figma, Adobe XD, e.l.)
-2. Sid to og to – én er "bruger", én observerer
-3. "Bruger" prøver at løse opgave (fx “Find kontaktoplysninger”)
-4. “Observatør” dokumenterer, hvor der opstår forvirring
-5. Sammen skriv forslag til forbedringer
-
----
-
-### 🔹 Øvelse 6: Regression test
-
-**🎯 Læringsmål:** Genteste eksisterende funktionalitet efter ændringer.  
-**🧠 Hvorfor lære dette?** Sikrer at ny kode ikke ødelægger noget.
-
-**Sådan gør du:**
-
-1. Få adgang til to versioner af en applikation (før og efter opdatering)
-2. Lav en liste over funktioner der skal retestes
-3. Brug **Test Plans** og lav en testplan kaldet "Regression Test"
-4. Udfør testene og marker hvad stadig virker – og hvad der er brudt
-
----
-
-### 🔹 Øvelse 7: Smoke test
-
-**🎯 Læringsmål:** Forstå idéen med hurtig "sundhedstest".  
-**🧠 Hvorfor lære dette?** Afklarer om systemet overhovedet er testklart.
-
-**Sådan gør du:**
-
-1. Lav en kort liste: "Forside loader", "Login virker", "Menu fungerer"
-2. I Azure DevOps, opret én suite kaldet “Smoke Test”
-3. Opret en test case pr. punkt
-4. Udfør testen efter ny version er deployeret
-5. Marker hurtigt systemets tilstand
-
----
-
-### 🔹 Øvelse 8: Boundary test
-
-**🎯 Læringsmål:** Identificere og teste grænseværdier.  
-**🧠 Hvorfor lære dette?** Grænseværdier er hyppige fejlområder.
-
-**Sådan gør du:**
-
-1. Scenarie: System accepterer alder mellem 18–99
-2. Lav 4 test cases:
-   - Alder = 17 (skal afvises)
-   - Alder = 18 (skal accepteres)
-   - Alder = 99 (skal accepteres)
-   - Alder = 100 (skal afvises)
-3. Brug testplanen “Boundary Test” og dokumentér resultat
-
----
-
-God fornøjelse!
+De øvrige øvelser udvides snart i samme detaljeringsgrad. Sig til hvis du har særlige ønsker til dem.
