@@ -2,7 +2,7 @@
 
 ## Baggrund
 
-Virksomheden Agrisys ønsker at få udviklet et system til at overvåge fodringen af grise. Agrisys er en førende leverandør af teknologiske løsninger til landbruget, der specialiserer sig i automatiserede fodrings- og overvågningssystemer. De arbejder tæt sammen med landmænd for at optimere dyrevelfærd og produktivitet gennem avanceret dataanalyse og IoT-baserede løsninger. Systemet skal hjælpe med at analysere og visualisere fodringsdata samt give advarsler, hvis en gris ikke har spist nok de sidste 3 dage. Data er tilgængelig i en Excel-fil, som systemet skal kunne importere.
+Virksomheden Agrisys ønsker at få udviklet et system til at overvåge fodringen af grise. Agrisys er en førende leverandør af teknologiske løsninger til landbruget, der specialiserer sig i automatiserede fodrings- og overvågningssystemer. De arbejder tæt sammen med landmænd for at optimere dyrevelfærd og produktivitet gennem avanceret dataanalyse og IoT-baserede løsninger. Systemet skal hjælpe med at analysere og visualisere fodringsdata samt give advarsler, hvis en gris ikke har spist nok de sidste 3 dage. Data er tilgængelig i en Excel-fil, som systemet skal kunne importere. Mere information om virksomheden findes på [www.agrisys.dk](https://www.agrisys.dk).
 
 ## Systemkrav
 
@@ -43,7 +43,7 @@ Virksomheden Agrisys ønsker at få udviklet et system til at overvåge fodringe
 - **ER-diagram:** Database design
 - **Systemudviklingsmetode:** Studerende skal vælge en metode og begrunde valget
 
-## Arbejdsopgaver for studerende
+## Arbejdsopgaver til jer
 
 1. Importér data fra Excel og vis det i systemet.
 2. Design en MSSQL-database til at lagre fodringsdata.
@@ -57,7 +57,7 @@ Virksomheden Agrisys ønsker at få udviklet et system til at overvåge fodringe
 
 ## Forventet resultat
 
-Studerende skal udvikle en fungerende prototype af systemet med en database og et JavaFX-brugerinterface. Projektet evalueres på kodens kvalitet, systemarkitektur, databaseimplementering og rapportering.
+I skal udvikle en fungerende prototype af systemet med en database og et JavaFX-brugerinterface. Projektet evalueres på kodens kvalitet, systemarkitektur, databaseimplementering og rapportering.
 
 ## Leverables
 
