@@ -59,6 +59,14 @@ Virksomheden Agrisys ønsker at få udviklet et system til at overvåge fodringe
 
 I skal udvikle en fungerende prototype af systemet med en database og et JavaFX-brugerinterface. Projektet evalueres på kodens kvalitet, systemarkitektur, databaseimplementering og rapportering.
 
+## Skal have i rapporten
+
+Der skal være sidetal på hver side (foruden forsiden).
+Der skal være hvem har skrevet hvad på hvert afsnit.
+Der skal være hvem har skrevet kodeafsnittet.
+Der skal være en indholdsfortegnelse
+
+
 ## Leverables
 
 - Kørende JavaFX-applikation med databaseintegration
