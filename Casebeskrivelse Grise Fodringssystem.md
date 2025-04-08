@@ -66,6 +66,9 @@ Der skal være hvem har skrevet hvad på hvert afsnit.
 Der skal være hvem har skrevet kodeafsnittet.
 Der skal være en indholdsfortegnelse
 
+Antal sider: min 20 og max 40sider.
+En normal side er 2200 tegn inkl. mellemrum og fodnoter. Forside, indholdsfortegnelse, litteraturliste samt billag tæller IKKE med. Bilag er uden for bedømmelse. Det afleverede produkt tæller ikke med som bilag. 
+
 
 ## Leverables
 
